@@ -320,6 +320,7 @@ def generate_keys(save_path, name, encryption_type, nbits=4096):
         public_key = private_key.public_key()
     else:
         # Generate recipient key pair
+
         print("Elliptical")
         private_key = ec.generate_private_key(ec.SECP256R1(), default_backend())
         public_key = private_key.public_key()
